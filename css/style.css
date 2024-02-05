@@ -1,0 +1,99 @@
+/* Apply a reset to remove default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define styles for the body element */
+.body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Style the canvas element */
+#canvas {
+  border: 1px solid;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgb(143, 248, 248);
+}
+
+/* Style the container for the canvas */
+.canvasDiv {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Style the start button */
+#startButton {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  /* Apply box shadow with a transition effect */
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  padding: 7px 20px;
+  display: inline-block;
+  position: fixed;
+  top: 57%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  transition: all 250ms;
+  border: 0;
+  font-size: 22px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+/* Style the restart button */
+#restartButton {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  /* Apply box shadow with a transition effect */
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: fixed;
+  left: 47.3%;
+  top: 51%;
+  opacity: 0; /* Initially set opacity to 0 for hiding */
+}
+
+/* Apply hover styles to both start and restart buttons */
+#restartButton:hover, #startButton:hover {
+  /* Adjusted box shadow and scale for hover effect */
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05);
+}
